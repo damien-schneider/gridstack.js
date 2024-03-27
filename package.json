@@ -1,13 +1,19 @@
 {
   "name": "gridstack",
-  "version": "0.0.1",
-  "description": "website for gridstack.js",
+  "type": "module",
+  "version": "0.0.2",
+  "description": "gridstack.js website and documentation",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gridstack/gridstack.js.git"
   },
   "scripts": {
-    "reset": "rm -rf dist node_modules coverage && yarn"
+    "reset": "rm -rf dist node_modules coverage && yarn",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "license": "see GridStack root license",
   "bugs": {
@@ -15,7 +21,12 @@
   },
   "homepage": "http://gridstackjs.com",
   "dependencies": {
-    "gridstack": "10.1.1"
+    "gridstack": "10.1.1",
+    "astro": "^4.5.10",
+    "@astrojs/check": "^0.5.10",
+    "typescript": "^5.4.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "main": "index.js",
+  "author": "Damien Schneider <74979845+damien-schneider@users.noreply.github.com>"
 }

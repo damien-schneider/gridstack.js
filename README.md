@@ -52,3 +52,14 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Library used?
+
+### React
+
+Astro supports React out of the box. You can use React components in your `.astro` files.
+
+### Icons
+
+- We want smooth icons, so we usse [Lucide Icons](https://lucide.dev/). The library is not installed but we copy the svg code from the website.
+- For some icons, we use [Devicon](https://devicon.dev/). The script is in the `Layout.astro` file.

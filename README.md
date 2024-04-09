@@ -36,6 +36,14 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
+### Examples
+
+The examples are in the `src/pages/` directory. It's important to know that the `<script src="events.js"></script> is replaced by the events.astro which execute the exact same script but make it work as in the astro website context.
+
+The process to update the example in the website :
+
+TO BE COMPLETED
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:

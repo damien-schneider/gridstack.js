@@ -1,0 +1,49 @@
+---
+import SectionBase from '../components/section-base.astro';
+import CodeFrame from '../components/code-frame.tsx';
+---
+
+<SectionBase
+  badge="Getting started"
+  title="Getting started"
+  description={`Create your first interactive grid by copy-pasting the HTML+JS, as seen below...`}
+>
+  <div>
+    <!-- <CodeFrame
+      client:load
+      isInstallationCode={true}
+      code={`gridstack`}
+    /> -->
+    <p class="paragraph-primary mt-8 mb-4">Then in an html file :</p>
+    <!-- <CodeFrame
+      client:load
+      isInstallationCode={false}
+      code={`<script src="node_modules/gridstack/dist/gridstack-all.js"></script>
+<link href="node_modules/gridstack/dist/gridstack.min.css" rel="stylesheet"/>
+<style type="text/css">
+  .grid-stack { background: #FAFAD2; }
+  .grid-stack-item-content { background-color: #18BC9C; }
+</style>
+
+<div class="grid-stack"></div>
+
+<script type="text/javascript">
+  var items = [
+    {content: 'my first widget'}, // will default to location (0,0) and 1x1
+    {w: 2, content: 'another longer widget!'} // will be placed next at (1,0) and 2x1
+  ];
+  var grid = GridStack.init();
+  grid.load(items);
+</script>`}
+    /> -->
+    <p class="paragraph-primary mt-8">
+      ...and that's it! Drag, drop, and resize to your heart's content. Looking for more
+      complex examples? Check out the advanced example below, the links in the nav bar, or
+      our docs in <a
+        class="link-primary"
+        href="https://github.com/gridstack/gridstack.js/blob/develop/README.md"
+        >GitHub</a
+      >
+    </p>
+  </div>
+</SectionBase>

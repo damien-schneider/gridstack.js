@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* ----- TEXTS ----- */
+  .heading-1 {
+    @apply text-7xl font-bold text-gray-900;
+  }
+  .heading-2 {
+    @apply text-5xl font-bold text-gray-900;
+  }
+  .paragraph-primary {
+    @apply text-lg text-gray-600;
+  }
+  .link-primary {
+    @apply text-blue-500 font-bold hover:text-blue-400;
+  }
+  /* ----- BUTTONS ----- */
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-500 to-blue-400 hover:from-blue-600 hover:to-blue-500 text-white font-bold h-16 px-8 rounded-full inline-flex items-center gap-2 transition-all;
+  }
+  .btn-primary-sm {
+    @apply btn-primary text-sm h-12 px-6;
+  }
+  .btn-primary-lg {
+    @apply btn-primary text-xl font-semibold h-16 px-8;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-950 text-white font-bold h-16 px-8 rounded-full inline-flex items-center gap-2 hover:bg-gray-800 transition-all;
+  }
+  .btn-secondary-sm {
+    @apply btn-secondary text-sm h-12 px-6;
+  }
+  .badge-primary {
+    @apply bg-blue-500 text-white font-bold h-8 px-4 rounded-full inline-flex items-center gap-2;
+  }
+
+  /* ----- OTHER ----- */
+
+  .badge-secondary {
+    @apply bg-white text-gray-800 border border-gray-800 font-bold h-8 px-4 rounded-full inline-flex items-center gap-2;
+  }
+  .icon {
+    @apply w-8 h-8;
+  }
+}

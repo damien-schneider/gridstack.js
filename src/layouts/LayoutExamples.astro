@@ -1,0 +1,75 @@
+---
+interface Props {
+  title: string;
+}
+import { ViewTransitions } from 'astro:transitions';
+import Navbar from '../components/navbar';
+
+const { title } = Astro.props;
+
+const links = [
+  { href: './static', text: 'static' },
+  { href: './two', text: 'two' },
+  { href: '#', text: 'Contact' },
+];
+
+import '../styles/demo.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>
+      {title} gridstack example
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/gridstack/dist/gridstack-extra.min.css"
+    />
+    <style type="text/css">
+      .with-lines {
+        border: 1px dotted #777;
+      }
+    </style>
+
+    <script
+      is:inline
+      src="../../../node_modules/gridstack/dist/gridstack-all.js"
+    ></script>
+  </head>
+  <body>
+    <Navbar client:load />
+
+    <div class="flex pt-16">
+      <div class="w-3/12 h-full flex flex-col p-2 gap-2">
+        {
+          links.map((link) => (
+            <a
+              href={link.href}
+              class="w-full bg-gray-100 transition-colors rounded-lg h-10 hover:bg-gray-200 appearance-none cursor-pointer px-4 items-center justify-center flex"
+            >
+              {link.text}
+            </a>
+          ))
+        }
+      </div>
+      <div class="w-9/12">
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>

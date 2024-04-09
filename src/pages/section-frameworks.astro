@@ -1,0 +1,43 @@
+---
+import SectionBase from '../components/section-base.astro';
+---
+
+<SectionBase
+  badge="Workflow"
+  title="Framework Agnostic"
+  description="The framework is designed to be used with any PHP framework. It is a set of tools that can be used to build a custom application. The framework is designed to be used with any PHP framework. It is a set of tools that can be used to build a custom application."
+>
+  <ul>
+    <li class="list-item">
+      <i class="devicon-laravel-plain icon paragraph-primary"></i>
+      <p class="paragraph-primary">Vanilla JS</p>
+    </li>
+    <li class="list-item">
+      <i class="devicon-angularjs-plain icon paragraph-primary"></i>
+      <p class="paragraph-primary">Angular</p>
+    </li>
+    <li class="list-item">
+      <i class="devicon-react-original icon paragraph-primary"></i>
+      <p class="paragraph-primary">React</p>
+    </li>
+    <li class="list-item">
+      <i class="devicon-vuejs-plain icon paragraph-primary"></i>
+      <p class="paragraph-primary">Vue</p>
+    </li>
+    <li class="list-item">
+      <i class="devicon-laravel-plain icon paragraph-primary"></i>
+      <p class="paragraph-primary">Laravel</p>
+    </li>
+    <li class="list-item">
+      <p class="paragraph-primary">And many more...</p>
+    </li>
+  </ul>
+</SectionBase>
+<style>
+  i {
+    @apply size-8 inline-flex bg-gray-100 rounded-full items-center justify-center;
+  }
+  .list-item {
+    @apply mt-8 flex items-center gap-4;
+  }
+</style>

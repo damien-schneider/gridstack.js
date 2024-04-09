@@ -1,0 +1,14 @@
+---
+import AdvancedDemo from '../components/gridstack/advanced-demo.astro';
+import AdvancedDemoReact from '../components/gridstack/advanced-demo-react.tsx';
+import SectionBase from '../components/section-base.astro';
+---
+
+<SectionBase
+  badge="Demo"
+  title="Advanced demo"
+  description="This is a more advanced demo of the Gridstack framework."
+>
+  <AdvancedDemoReact client:only="react" />
+  <!-- <AdvancedDemo client:only /> -->
+</SectionBase>

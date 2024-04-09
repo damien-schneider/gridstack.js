@@ -1,0 +1,64 @@
+---
+
+---
+
+<script
+  is:inline
+  src="../../../node_modules/gridstack/dist/gridstack-all.js"
+></script>
+<script>
+  console.log('coucou');
+</script>
+
+<p>ASTRO GRID</p>
+<div class="container-fluid mb-96">
+  <h1>Advanced Grid Demo</h1>
+  <div>
+    <!-- Your buttons for adding, making widgets, and toggling float -->
+  </div>
+  <div class="grid-stack w-full h-96 bg-red-100">
+    <div
+      class="grid-stack-item"
+      data-gs-x="0"
+      data-gs-y="0"
+      data-gs-width="4"
+      data-gs-height="2"
+    >
+      <div class="grid-stack-item-content">Hello</div>
+    </div>
+    <div
+      class="grid-stack-item"
+      data-gs-x="4"
+      data-gs-y="0"
+      data-gs-width="4"
+      data-gs-height="4"
+    >
+      <div class="grid-stack-item-content">World</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .grid-stack {
+    background: #f0f0f0;
+  }
+  .grid-stack-item-content {
+    color: white;
+    text-align: center;
+    background-color: #18bc9c;
+  }
+</style>
+
+<script is:inline>
+  // const serializedData = [
+  //   { x: 0, y: 0, w: 2, h: 2 },
+  //   { x: 2, y: 3, w: 3, content: 'item 2' },
+  //   { x: 1, y: 3 },
+  // ];
+
+  var grid = GridStack.init();
+  // grid.load(serializedData);
+  console.log(grid);
+  console.log('coucou');
+  // grid.addWidget({ w: 2, content: 'item 1' });
+</script>
